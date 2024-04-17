@@ -1,0 +1,437 @@
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+pre {
+  font-family: Arial;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: Arial;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+body,
+button,
+input {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "liga", "kern";
+  font-feature-settings: "liga", "kern";
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: Arial;
+  font-weight: 500;
+}
+
+h1:first-of-type,
+h2:first-of-type,
+h3:first-of-type,
+h4:first-of-type,
+h5:first-of-type,
+h6:first-of-type {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p:first-of-type {
+  margin-top: 0;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+@supports (-webkit-text-stroke: 2px #f2f2f2) or (text-stroke: 2px #f2f2f2) {
+  body.night-mode.home-page:not(.ultra-mode) .projects a,
+  body.ultra-mode.home-page:not(.ultra-mode) .projects a {
+    color: transparent;
+    -webkit-text-stroke: 2px #f2f2f2;
+    text-stroke: 2px #f2f2f2;
+  }
+}
+
+@supports (-webkit-text-stroke: 0px #f2f2f2) or (text-stroke: 0px #f2f2f2) {
+  body.night-mode.home-page:not(.ultra-mode):not(.intro):not(.outro)
+    .projects.isHovering
+    li:hover
+    a,
+  body.night-mode.home-page:not(.ultra-mode):not(.outro)
+    .projects
+    li.isSelected:hover
+    a,
+  body.night-mode.home-page:not(.ultra-mode):not(.outro)
+    .projects
+    li.isSelected
+    a,
+  body.ultra-mode.home-page:not(.ultra-mode):not(.intro):not(.outro)
+    .projects.isHovering
+    li:hover
+    a,
+  body.ultra-mode.home-page:not(.ultra-mode):not(.outro)
+    .projects
+    li.isSelected:hover
+    a,
+  body.ultra-mode.home-page:not(.ultra-mode):not(.outro)
+    .projects
+    li.isSelected
+    a {
+    color: #f2f2f2;
+  }
+}
+
+@supports (-webkit-text-stroke: 2px #f2f2f2) or (text-stroke: 2px #f2f2f2) {
+  body.night-mode.home-page:not(.ultra-mode).outro
+    .projects.isHovering
+    li:hover
+    a,
+  body.night-mode.home-page:not(.ultra-mode).outro
+    .projects
+    li.isSelected:hover
+    a,
+  body.night-mode.home-page:not(.ultra-mode).outro .projects li.isSelected a,
+  body.ultra-mode.home-page:not(.ultra-mode).outro
+    .projects.isHovering
+    li:hover
+    a,
+  body.ultra-mode.home-page:not(.ultra-mode).outro
+    .projects
+    li.isSelected:hover
+    a,
+  body.ultra-mode.home-page:not(.ultra-mode).outro .projects li.isSelected a {
+    color: transparent;
+    transition: color 0.5s 0.5s, opacity 1s;
+    -webkit-text-stroke: 2px #f2f2f2;
+    text-stroke: 2px #f2f2f2;
+  }
+}
+
+body.night-mode.home-page:not(.ultra-mode) .projects a:before,
+body.ultra-mode.home-page:not(.ultra-mode) .projects a:before {
+  color: #f2f2f2 !important;
+}
+
+@media screen and (max-width: 767px) {
+  @supports (-webkit-text-stroke: 1px #f2f2f2) or (text-stroke: 1px #f2f2f2) {
+    body.night-mode.home-page:not(.ultra-mode) .projects a,
+    body.ultra-mode.home-page:not(.ultra-mode) .projects a {
+      -webkit-text-stroke: 1px #f2f2f2;
+      text-stroke: 1px #f2f2f2;
+    }
+  }
+}
+
+@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+  body.night-mode.work-page .case-study .hero .title,
+  body.ultra-mode.work-page .case-study .hero .title {
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+  }
+}
+
+body.night-mode.journal-page .journal .cta,
+body.night-mode.work-page .case-study .intro .credits a,
+body.ultra-mode.journal-page .journal .cta,
+body.ultra-mode.work-page .case-study .intro .credits a {
+  color: #f2f2f2;
+}
+
+body.night-mode .module-copy .col-1 a,
+body.night-mode .module-copy .col-2 a,
+body.night-mode .module-project a,
+body.night-mode .module-project a:hover .project-name,
+body.ultra-mode .module-copy .col-1 a,
+body.ultra-mode .module-copy .col-2 a,
+body.ultra-mode .module-project a,
+body.ultra-mode .module-project a:hover .project-name {
+  color: #f2f2f2;
+}
+
+@media screen and (min-width: 768px) {
+  @supports (-webkit-text-stroke: 2px #f2f2f2) or (text-stroke: 2px #f2f2f2) {
+    body.night-mode .module-project .project-name,
+    body.ultra-mode .module-project .project-name {
+      color: transparent;
+      -webkit-text-stroke: 2px #f2f2f2;
+      text-stroke: 2px #f2f2f2;
+    }
+  }
+}
+
+body.night-mode .module-copy-image .copy .link,
+body.night-mode .module-copy-image .copy a,
+body.night-mode .module-copy-image .image .caption a,
+body.ultra-mode .module-copy-image .copy .link,
+body.ultra-mode .module-copy-image .copy a,
+body.ultra-mode .module-copy-image .image .caption a {
+  color: #f2f2f2;
+}
+
+body.night-mode .flex-3 .chat:not(:nth-child(odd)),
+body.ultra-mode .flex-3 .chat:not(:nth-child(odd)) {
+  color: #000;
+}
+
+body.night-mode .logo {
+  color: #fff;
+}
+
+@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+  body.night-mode .logo {
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+    body.night-mode .logo:hover {
+      color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body.night-mode .module-copy-image .image:after {
+    background: linear-gradient(0deg, #000 0, transparent);
+  }
+  body.night-mode .project-name {
+    font-size: 40px;
+  }
+  @supports (-webkit-text-stroke: 1px #f2f2f2) or (text-stroke: 1px #f2f2f2) {
+    body.night-mode .project-name {
+      color: transparent;
+      -webkit-text-stroke: 1px #f2f2f2;
+      text-stroke: 1px #f2f2f2;
+    }
+  }
+}
+
+body.light-mode .color-mode .dot {
+  background-color: #000;
+}
+
+@supports (-webkit-text-stroke: 3px #151515) or (text-stroke: 3px #151515) {
+  body.light-mode.home-page .projectsLi.isSelected .projectContainer a,
+  body.light-mode.home-page .projectsLi.isSelected:hover .projectContainer a {
+    color: transparent;
+    -webkit-text-stroke: 3px #151515;
+    text-stroke: 3px #151515;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  @supports (-webkit-text-stroke: 1px #151515) or (text-stroke: 1px #151515) {
+    body.light-mode.home-page .projectsLi.isSelected .projectContainer a,
+    body.light-mode.home-page .projectsLi.isSelected:hover .projectContainer a {
+      -webkit-text-stroke: 1px #151515;
+      text-stroke: 1px #151515;
+    }
+  }
+}
+
+body.ultra-mode .logo {
+  color: #000;
+}
+
+@supports (-webkit-text-stroke: 1px #000) or (text-stroke: 1px #000) {
+  body.ultra-mode .logo {
+    -webkit-text-stroke: 1px #000;
+    text-stroke: 1px #000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+    body.ultra-mode .logo:hover {
+      color: transparent;
+    }
+  }
+}
+
+@supports (-webkit-text-stroke: 3px #000) or (text-stroke: 3px #000) {
+  body.ultra-mode.home-page .projects a {
+    color: #000;
+    -webkit-text-stroke: 3px #000;
+    text-stroke: 3px #000;
+  }
+}
+
+@supports (-webkit-text-stroke: 3px #151515) or (text-stroke: 3px #151515) {
+  body.ultra-mode.home-page.outro .projectsLi.isSelected .projectContainer a,
+  body.ultra-mode.home-page.outro
+    .projectsLi.isSelected:hover
+    .projectContainer
+    a,
+  body.ultra-mode.home-page:not(.intro):not(.outro)
+    .projects.isHovering
+    li:hover
+    a,
+  body.ultra-mode.home-page:not(.outro) .projects li.isSelected:hover a,
+  body.ultra-mode.home-page:not(.outro) .projects li.isSelected a {
+    color: transparent;
+    -webkit-text-stroke: 3px #151515;
+    text-stroke: 3px #151515;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1320px) {
+  @supports (-webkit-text-stroke: 2px #000) or (text-stroke: 2px #000) {
+    body.ultra-mode.home-page .projects a {
+      color: #000;
+      -webkit-text-stroke: 2px #000;
+      text-stroke: 2px #000;
+    }
+  }
+  @supports (-webkit-text-stroke: 2px #151515) or (text-stroke: 2px #151515) {
+    body.ultra-mode.home-page.outro .projectsLi.isSelected .projectContainer a,
+    body.ultra-mode.home-page.outro
+      .projectsLi.isSelected:hover
+      .projectContainer
+      a,
+    body.ultra-mode.home-page .projectsLi.isSelected .projectContainer a,
+    body.ultra-mode.home-page .projectsLi.isSelected:hover .projectContainer a,
+    body.ultra-mode.home-page:not(.intro):not(.outro)
+      .projects.isHovering
+      li:hover
+      a,
+    body.ultra-mode.home-page:not(.outro) .projects li.isSelected:hover a,
+    body.ultra-mode.home-page:not(.outro) .projects li.isSelected a {
+      color: transparent;
+      -webkit-text-stroke: 2px #151515;
+      text-stroke: 2px #151515;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  @supports (-webkit-text-stroke: 1px #151515) or (text-stroke: 1px #151515) {
+    body.ultra-mode.home-page .projects a {
+      color: #000;
+      -webkit-text-stroke: 0 #151515;
+      text-stroke: 0 #151515;
+    }
+  }
+  @supports (-webkit-text-stroke: 1px #151515) or (text-stroke: 1px #151515) {
+    body.ultra-mode.home-page.outro .projectsLi.isSelected .projectContainer a,
+    body.ultra-mode.home-page.outro
+      .projectsLi.isSelected:hover
+      .projectContainer
+      a,
+    body.ultra-mode.home-page .projectsLi.isSelected .projectContainer a,
+    body.ultra-mode.home-page .projectsLi.isSelected:hover .projectContainer a,
+    body.ultra-mode.home-page:not(.intro):not(.outro)
+      .projects.isHovering
+      li:hover
+      a,
+    body.ultra-mode.home-page:not(.outro) .projects li.isSelected:hover a,
+    body.ultra-mode.home-page:not(.outro) .projects li.isSelected a {
+      color: transparent;
+      -webkit-text-stroke: 1px #151515;
+      text-stroke: 1px #151515;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body.ultra-mode .module-copy-image .image:after {
+    background: linear-gradient(0deg, green 0, rgba(72, 1, 255, 0));
+  }
+  body.ultra-mode .project-name {
+    font-size: 40px;
+  }
+  @supports (-webkit-text-stroke: 1px #f2f2f2) or (text-stroke: 1px #f2f2f2) {
+    body.ultra-mode .project-name {
+      color: transparent;
+      -webkit-text-stroke: 1px #f2f2f2;
+      text-stroke: 1px #f2f2f2;
+    }
+  }
+}
+
+.module-copy-image .image .caption {
+  font-size: 14px;
+  opacity: 0;
+}
+
+.module-copy-image .image .caption a {
+  color: #000;
+  text-decoration: none;
+}
