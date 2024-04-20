@@ -278,15 +278,15 @@ body.ultra-mode .about .right {
 }
 
 body.ultra-mode {
-  background-color: green;
+  background-color: rgb(114, 114, 114);
 }
 
 body.ultra-mode .curtain {
-  background-color: green !important;
+  background-color: rgb(114, 114, 114) !important;
 }
 
 body.ultra-mode .about:before {
-  background-color: rgba(0, 128, 0, 0.85);
+  background-color: rgb(114, 114, 114);
 }
 
 body.ultra-mode .logo {
